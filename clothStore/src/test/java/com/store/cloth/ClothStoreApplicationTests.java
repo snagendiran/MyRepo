@@ -8,6 +8,7 @@ class ClothStoreApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Context Loaded");
 	}
 
 }
