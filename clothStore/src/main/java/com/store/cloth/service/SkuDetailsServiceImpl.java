@@ -10,12 +10,10 @@ public class SkuDetailsServiceImpl  implements SkuDetailsService {
 
 	@Autowired
 	private SkuRepository skuRepository;
-	private Sku sku;
 	
 
 	@Override
 	public Sku fetchSkuDetailsById(String id) {
-		
 		
 		
 		return skuRepository.findById(Long.valueOf(id)).map(o-> {return o;}).orElseGet(()->{ System.out.println("No Such value"); return null;}); 
